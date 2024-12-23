@@ -1,4 +1,4 @@
-import 'package:einfarht/ui/screens/splash_screen.dart';
+import 'package:einfarht/ui/screens/onboarding/onboard_one.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const SplashScreen(),
+      home: OnboardOne(),
     );
   }
 }
