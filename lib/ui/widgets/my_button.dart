@@ -39,7 +39,11 @@ class MyButton extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 10.0),
-                      child: buttonImage!,
+                      child: SizedBox(
+                        width: 30.0,
+                        height: 30.0,
+                        child: buttonImage!,
+                      ),
                     ),
                     const SizedBox(width: 5),
                     Expanded(

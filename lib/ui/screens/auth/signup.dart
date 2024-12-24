@@ -1,14 +1,8 @@
-import 'package:einfarht/ui/screens/auth/signup.dart';
 import 'package:einfarht/ui/widgets/my_button.dart';
 import 'package:flutter/material.dart';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
-
-  void signup(BuildContext context) {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => const Signup()));
-  }
+class Signup extends StatelessWidget {
+  const Signup({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +40,7 @@ class Login extends StatelessWidget {
               height: 30.0,
             ),
             const Text(
-              'Log into your account',
+              'Create you account',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontFamily: 'Poppins',
@@ -190,13 +184,13 @@ class Login extends StatelessWidget {
                   fontWeight: FontWeight.normal),
             ),
             const Spacer(),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 30.0),
+            const Padding(
+              padding: EdgeInsets.only(bottom: 30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
-                    'Don’t have an account?',
+                  Text(
+                    'Already have an account?',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 16,
@@ -205,21 +199,18 @@ class Login extends StatelessWidget {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 5.0,
                   ),
-                  GestureDetector(
-                    onTap: () => signup(context),
-                    child: const Text(
-                      'SIGN UP',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16,
-                        fontStyle: FontStyle.normal,
-                        color: Color(0xFF5470F2),
-                        letterSpacing: 2,
-                        fontWeight: FontWeight.w600,
-                      ),
+                  Text(
+                    'LOG IN',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 16,
+                      fontStyle: FontStyle.normal,
+                      color: Color(0xFF5470F2),
+                      letterSpacing: 2,
+                      fontWeight: FontWeight.w600,
                     ),
                   )
                 ],
