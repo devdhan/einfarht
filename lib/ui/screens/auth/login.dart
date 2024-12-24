@@ -1,3 +1,4 @@
+import 'package:einfarht/ui/widgets/my_button.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
@@ -78,6 +79,78 @@ class Login extends StatelessWidget {
                     fontSize: 12,
                   ),
                 ),
+              ),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: 'Enter your phone',
+                  labelStyle: TextStyle(
+                      color: Color(0x4C000000),
+                      fontStyle: FontStyle.normal,
+                      fontFamily: 'Poppins',
+                      fontSize: 12,
+                      fontWeight: FontWeight.w500),
+                  filled: true,
+                  fillColor: Color(0xFFF0F4F8),
+                  border: InputBorder.none,
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderSide: BorderSide(color: Colors.transparent),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 20.0,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: MyButton(
+                  onTap: () {},
+                  buttonText: 'Continue',
+                  buttonColor: const Color(0xFF5470F2),
+                  buttonTextColor: Colors.white,
+                  fontSize: 16,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w600),
+            ),
+            const SizedBox(
+              height: 15.0,
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 30.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Divider(
+                      thickness: 1,
+                      color: Color(0x33000000),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10.0),
+                    child: Text(
+                      'OR',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 16,
+                        fontStyle: FontStyle.normal,
+                        color: Color(0x33000000),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Divider(
+                      thickness: 1,
+                      color: Color(0x33000000),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
