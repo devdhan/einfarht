@@ -19,7 +19,7 @@ class SplashScreen extends StatelessWidget {
                 fontFamily: 'Poppins',
                 fontStyle: FontStyle.italic,
                 fontWeight: FontWeight.w300,
-                color: Color(0x9C4865EF),
+                color: Color(0xFF4865EF),
                 fontSize: 32,
                 letterSpacing: 4,
               ),

@@ -1,12 +1,12 @@
-import 'package:einfarht/ui/screens/onboarding/onboard_three.dart';
+import 'package:einfarht/ui/screens/onboarding/setup_gps.dart';
 import 'package:flutter/material.dart';
 
-class OnboardTwo extends StatelessWidget {
-  const OnboardTwo({super.key});
+class OnboardThree extends StatelessWidget {
+  const OnboardThree({super.key});
 
-  void track(BuildContext context) {
+  void setupgps(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => OnboardThree()));
+        context, MaterialPageRoute(builder: (context) => SetupGps()));
   }
 
   @override
@@ -33,12 +33,12 @@ class OnboardTwo extends StatelessWidget {
             const SizedBox(
               height: 50.0,
             ),
-            Image.asset('assets/confimdriver.png'),
+            Image.asset('assets/trackride.png'),
             const SizedBox(
               height: 50.0,
             ),
             const Text(
-              'Confirm Your Driver',
+              'Track your ride',
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: 'Poppins',
@@ -50,7 +50,7 @@ class OnboardTwo extends StatelessWidget {
               height: 15.0,
             ),
             const Text(
-              'Huge drivers network helps you\n find comforable, safe and cheap\n ride',
+              'Know your driver in advance and\n be able to view current location\n in real time on the map',
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: 'Poppins',
@@ -62,17 +62,17 @@ class OnboardTwo extends StatelessWidget {
               height: 40.0,
             ),
             ElevatedButton(
-              onPressed: () => track(context),
+              onPressed: () => setupgps(context),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF5470F2),
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 80, vertical: 15),
+                    const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
               child: const Text(
-                'Next',
+                'Get Started!',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 18,
@@ -83,8 +83,8 @@ class OnboardTwo extends StatelessWidget {
             ),
             const Spacer(),
             Padding(
-              padding: const EdgeInsets.only(bottom: 30.0),
-              child: Image.asset('assets/slide2.png'),
+              padding: const EdgeInsets.only(bottom: 25.0),
+              child: Image.asset('assets/slide3.png'),
             )
           ],
         ),
