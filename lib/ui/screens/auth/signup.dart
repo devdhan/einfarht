@@ -1,8 +1,13 @@
+import 'package:einfarht/ui/screens/auth/sms_otp.dart';
 import 'package:einfarht/ui/widgets/my_button.dart';
 import 'package:flutter/material.dart';
 
 class Signup extends StatelessWidget {
   const Signup({super.key});
+
+  void otp(BuildContext context) {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => SmsOtp()));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -111,7 +116,7 @@ class Signup extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: MyButton(
-                  onTap: () {},
+                  onTap: () => otp(context),
                   buttonText: 'Continue',
                   buttonColor: const Color(0xFF5470F2),
                   buttonTextColor: Colors.white,
