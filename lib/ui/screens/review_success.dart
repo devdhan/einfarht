@@ -40,7 +40,7 @@ class ReviewSuccess extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 10.0,
+                height: 5.0,
               ),
               const Text(
                 'Thank you for your kind review!',
