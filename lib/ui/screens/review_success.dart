@@ -1,31 +1,25 @@
-import 'package:einfarht/ui/screens/review_success.dart';
 import 'package:einfarht/ui/widgets/my_button.dart';
 import 'package:flutter/material.dart';
 
-class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key});
-
-  void review(BuildContext context) {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => ReviewSuccess()));
-  }
+class ReviewSuccess extends StatelessWidget {
+  const ReviewSuccess({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title: const Text(
+          'Thank you!',
+          style: TextStyle(
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.w800,
+            color: Colors.black,
+            fontSize: 16,
+          ),
+        ),
         backgroundColor: Colors.white,
-        elevation: 0,
-        leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: const Icon(
-              Icons.chevron_left_sharp,
-              size: 40,
-              color: Colors.black,
-            )),
       ),
       body: Center(
         child: Padding(
@@ -34,22 +28,22 @@ class SuccessScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/verified.png'),
+              Image.asset('assets/review.png'),
               const Text(
-                'Verified Successfully!',
+                'Your review was submitted successfully!',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w800,
                   color: Colors.black,
-                  fontSize: 20,
+                  fontSize: 16,
                 ),
               ),
               const SizedBox(
                 height: 10.0,
               ),
               const Text(
-                'Your number is verified!',
+                'Thank you for your kind review!',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Poppins',
@@ -64,8 +58,8 @@ class SuccessScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: MyButton(
-                    onTap: () => review(context),
-                    buttonText: 'Continue',
+                    onTap: () {},
+                    buttonText: 'Return',
                     buttonColor: const Color(0xFF5470F2),
                     buttonTextColor: Colors.white,
                     fontSize: 16,
