@@ -1,13 +1,13 @@
-import 'package:einfarht/ui/screens/review_success.dart';
+import 'package:einfarht/ui/screens/home_screen.dart';
 import 'package:einfarht/ui/widgets/my_button.dart';
 import 'package:flutter/material.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({super.key});
 
-  void review(BuildContext context) {
+  void home(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => ReviewSuccess()));
+        context, MaterialPageRoute(builder: (context) => HomeScreen()));
   }
 
   @override
@@ -64,7 +64,7 @@ class SuccessScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: MyButton(
-                    onTap: () => review(context),
+                    onTap: () => home(context),
                     buttonText: 'Continue',
                     buttonColor: const Color(0xFF5470F2),
                     buttonTextColor: Colors.white,
