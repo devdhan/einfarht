@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   _mapController.complete(controller),
               initialCameraPosition: CameraPosition(
                 target: _currentP ?? _pGooglePlex,
-                zoom: 13,
+                zoom: 15,
               ),
               markers: {
                 if (_currentP != null)
@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final GoogleMapController controller = await _mapController.future;
     CameraPosition _newCameraPosition = CameraPosition(
       target: pos,
-      zoom: 13,
+      zoom: 15,
     );
     await controller.animateCamera(
       CameraUpdate.newCameraPosition(_newCameraPosition),
