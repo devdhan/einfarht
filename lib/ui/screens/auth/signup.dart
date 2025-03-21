@@ -208,7 +208,7 @@ class Signup extends StatelessWidget {
                     width: 5.0,
                   ),
                   Text(
-                    'LOG IN',
+                    'LOG IN NOW', //change here
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 16,

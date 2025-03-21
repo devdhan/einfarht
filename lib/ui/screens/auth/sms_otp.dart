@@ -198,7 +198,7 @@ class SmsOtp extends StatelessWidget {
               height: 20.0,
             ),
             const Text(
-              'Resend in (2 : 21)',
+              'Resend in (2 : 12)',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontFamily: 'Poppins',

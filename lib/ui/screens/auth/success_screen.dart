@@ -50,7 +50,7 @@ class SuccessScreen extends StatelessWidget {
                 height: 10.0,
               ),
               const Text(
-                'Your number is verified!',
+                'Your number is verified! Continue', //change
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Poppins',
