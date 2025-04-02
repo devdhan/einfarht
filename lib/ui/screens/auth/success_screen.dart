@@ -1,5 +1,5 @@
-// import 'package:einfarht/ui/screens/home_screen.dart';
-import 'package:einfarht/ui/screens/sos/emergency_two.dart';
+import 'package:einfarht/ui/screens/home_screen.dart';
+// import 'package:einfarht/ui/screens/sos/emergency_two.dart';
 import 'package:einfarht/ui/widgets/my_button.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +8,7 @@ class SuccessScreen extends StatelessWidget {
 
   void home(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => EmergencyTwo()));
+        context, MaterialPageRoute(builder: (context) => HomeScreen()));
   }
 
   @override
