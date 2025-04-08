@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 8.0,
               ),
               Text(
-                'Stuttgart - OST',
+                'Stuttgart - DST', //Stuttgart - OST'
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w600,
@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Colors.white,
       body: _currentP == null
           ? const Center(
-              child: Text('Loading....'),
+              child: Text('Loading Map....'),
             )
           : GoogleMap(
               onMapCreated: (GoogleMapController controller) =>
