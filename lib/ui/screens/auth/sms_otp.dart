@@ -33,7 +33,7 @@ class SmsOtp extends StatelessWidget {
           children: [
             Image.asset('assets/maskgroup.png'),
             const Text(
-              'EINFARHT',
+              'EINFARHT GERMANY',
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontStyle: FontStyle.italic,
