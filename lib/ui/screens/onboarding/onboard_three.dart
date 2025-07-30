@@ -6,7 +6,7 @@ class OnboardThree extends StatelessWidget {
 
   void setupgps(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => SetupGps()));
+        context, MaterialPageRoute(builder: (context) => const SetupGps()));
   }
 
   @override

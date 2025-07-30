@@ -8,7 +8,7 @@ class SuccessScreen extends StatelessWidget {
 
   void home(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => HomeScreen()));
+        context, MaterialPageRoute(builder: (context) => const HomeScreen()));
   }
 
   @override

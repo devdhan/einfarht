@@ -5,7 +5,8 @@ class SetupGps extends StatelessWidget {
   const SetupGps({super.key});
 
   void login(BuildContext context) {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const Login()));
   }
 
   @override

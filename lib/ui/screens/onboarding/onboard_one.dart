@@ -6,7 +6,7 @@ class OnboardOne extends StatelessWidget {
 
   void confirmdriver(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => OnboardTwo()));
+        context, MaterialPageRoute(builder: (context) => const OnboardTwo()));
   }
 
   @override

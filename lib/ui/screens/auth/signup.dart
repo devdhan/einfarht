@@ -6,7 +6,8 @@ class Signup extends StatelessWidget {
   const Signup({super.key});
 
   void otp(BuildContext context) {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => SmsOtp()));
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const SmsOtp()));
   }
 
   @override

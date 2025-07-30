@@ -7,8 +7,8 @@ class SmsOtp extends StatelessWidget {
   const SmsOtp({super.key});
 
   void success(BuildContext context) {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => SuccessScreen()));
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => const SuccessScreen()));
   }
 
   @override

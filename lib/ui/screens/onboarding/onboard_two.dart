@@ -6,7 +6,7 @@ class OnboardTwo extends StatelessWidget {
 
   void track(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => OnboardThree()));
+        context, MaterialPageRoute(builder: (context) => const OnboardThree()));
   }
 
   @override
