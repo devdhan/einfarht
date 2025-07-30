@@ -1,4 +1,4 @@
-import 'package:einfarht/ui/screens/auth/login.dart';
+import 'package:einfarht/features/authentication/presentation/login.dart';
 import 'package:flutter/material.dart';
 
 class SetupGps extends StatelessWidget {

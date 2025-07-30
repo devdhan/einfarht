@@ -1,12 +1,12 @@
-import 'package:einfarht/ui/screens/onboarding/onboard_two.dart';
+import 'package:einfarht/features/onboarding/presentation/onboard_three.dart';
 import 'package:flutter/material.dart';
 
-class OnboardOne extends StatelessWidget {
-  const OnboardOne({super.key});
+class OnboardTwo extends StatelessWidget {
+  const OnboardTwo({super.key});
 
-  void confirmdriver(BuildContext context) {
+  void track(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => const OnboardTwo()));
+        context, MaterialPageRoute(builder: (context) => const OnboardThree()));
   }
 
   @override
@@ -17,7 +17,9 @@ class OnboardOne extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
             icon: const Icon(
               Icons.chevron_left_sharp,
               size: 40,
@@ -31,12 +33,12 @@ class OnboardOne extends StatelessWidget {
             const SizedBox(
               height: 50.0,
             ),
-            Image.asset('assets/requestride.png'),
+            Image.asset('assets/confimdriver.png'),
             const SizedBox(
               height: 50.0,
             ),
             const Text(
-              'Request Ride',
+              'Confirm Your Driver',
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: 'Poppins',
@@ -48,7 +50,7 @@ class OnboardOne extends StatelessWidget {
               height: 15.0,
             ),
             const Text(
-              'Request a ride get picked up by\n a nearby community driver',
+              'Huge drivers network helps you\n find comforable, safe and cheap\n ride',
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: 'Poppins',
@@ -57,10 +59,10 @@ class OnboardOne extends StatelessWidget {
                   color: Color(0xFF262628)),
             ),
             const SizedBox(
-              height: 50.0,
+              height: 40.0,
             ),
             ElevatedButton(
-              onPressed: () => confirmdriver(context),
+              onPressed: () => track(context),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF5470F2),
                 padding:
@@ -82,7 +84,7 @@ class OnboardOne extends StatelessWidget {
             const Spacer(),
             Padding(
               padding: const EdgeInsets.only(bottom: 30.0),
-              child: Image.asset('assets/slide1.png'),
+              child: Image.asset('assets/slide2.png'),
             )
           ],
         ),

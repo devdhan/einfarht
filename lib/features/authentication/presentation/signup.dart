@@ -1,13 +1,13 @@
-import 'package:einfarht/ui/screens/auth/signup.dart';
-import 'package:einfarht/ui/widgets/my_button.dart';
+import 'package:einfarht/features/authentication/presentation/sms_otp.dart';
+import 'package:einfarht/commons/my_button.dart';
 import 'package:flutter/material.dart';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
+class Signup extends StatelessWidget {
+  const Signup({super.key});
 
-  void signup(BuildContext context) {
+  void otp(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => const Signup()));
+        context, MaterialPageRoute(builder: (context) => const SmsOtp()));
   }
 
   @override
@@ -46,7 +46,7 @@ class Login extends StatelessWidget {
               height: 30.0,
             ),
             const Text(
-              'Log into your account',
+              'Create you account',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontFamily: 'Poppins',
@@ -117,7 +117,7 @@ class Login extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: MyButton(
-                  onTap: () {},
+                  onTap: () => otp(context),
                   buttonText: 'Continue',
                   buttonColor: const Color(0xFF5470F2),
                   buttonTextColor: Colors.white,
@@ -190,13 +190,13 @@ class Login extends StatelessWidget {
                   fontWeight: FontWeight.normal),
             ),
             const Spacer(),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 30.0),
+            const Padding(
+              padding: EdgeInsets.only(bottom: 30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
-                    'Don’t have an account?',
+                  Text(
+                    'Already have an account?',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 16,
@@ -205,21 +205,18 @@ class Login extends StatelessWidget {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 5.0,
                   ),
-                  GestureDetector(
-                    onTap: () => signup(context),
-                    child: const Text(
-                      'SIGN UP',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16,
-                        fontStyle: FontStyle.normal,
-                        color: Color(0xFF5470F2),
-                        letterSpacing: 2,
-                        fontWeight: FontWeight.w600,
-                      ),
+                  Text(
+                    'LOG IN NOW', //change here
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 16,
+                      fontStyle: FontStyle.normal,
+                      color: Color(0xFF5470F2),
+                      letterSpacing: 2,
+                      fontWeight: FontWeight.w600,
                     ),
                   )
                 ],

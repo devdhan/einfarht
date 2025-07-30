@@ -1,5 +1,5 @@
-import 'package:einfarht/ui/screens/auth/success_screen.dart';
-import 'package:einfarht/ui/widgets/my_button.dart';
+import 'package:einfarht/features/authentication/presentation/success_screen.dart';
+import 'package:einfarht/commons/my_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

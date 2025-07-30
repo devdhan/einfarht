@@ -1,4 +1,4 @@
-import 'package:einfarht/ui/screens/onboarding/onboard_one.dart';
+import 'package:einfarht/features/onboarding/presentation/onboard_one.dart';
 import 'package:flutter/material.dart';
 
 void main() {

@@ -1,12 +1,12 @@
-import 'package:einfarht/ui/screens/onboarding/setup_gps.dart';
+import 'package:einfarht/features/onboarding/presentation/onboard_two.dart';
 import 'package:flutter/material.dart';
 
-class OnboardThree extends StatelessWidget {
-  const OnboardThree({super.key});
+class OnboardOne extends StatelessWidget {
+  const OnboardOne({super.key});
 
-  void setupgps(BuildContext context) {
+  void confirmdriver(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => const SetupGps()));
+        context, MaterialPageRoute(builder: (context) => const OnboardTwo()));
   }
 
   @override
@@ -17,9 +17,7 @@ class OnboardThree extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
+            onPressed: () {},
             icon: const Icon(
               Icons.chevron_left_sharp,
               size: 40,
@@ -33,12 +31,12 @@ class OnboardThree extends StatelessWidget {
             const SizedBox(
               height: 50.0,
             ),
-            Image.asset('assets/trackride.png'),
+            Image.asset('assets/requestride.png'),
             const SizedBox(
               height: 50.0,
             ),
             const Text(
-              'Track your ride',
+              'Request Ride',
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: 'Poppins',
@@ -50,7 +48,7 @@ class OnboardThree extends StatelessWidget {
               height: 15.0,
             ),
             const Text(
-              'Know your driver in advance and\n be able to view current location\n in real time on the map',
+              'Request a ride get picked up by\n a nearby community driver',
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: 'Poppins',
@@ -59,20 +57,20 @@ class OnboardThree extends StatelessWidget {
                   color: Color(0xFF262628)),
             ),
             const SizedBox(
-              height: 40.0,
+              height: 50.0,
             ),
             ElevatedButton(
-              onPressed: () => setupgps(context),
+              onPressed: () => confirmdriver(context),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF5470F2),
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                    const EdgeInsets.symmetric(horizontal: 80, vertical: 15),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
               child: const Text(
-                'Get Started!',
+                'Next',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 18,
@@ -83,8 +81,8 @@ class OnboardThree extends StatelessWidget {
             ),
             const Spacer(),
             Padding(
-              padding: const EdgeInsets.only(bottom: 25.0),
-              child: Image.asset('assets/slide3.png'),
+              padding: const EdgeInsets.only(bottom: 30.0),
+              child: Image.asset('assets/slide1.png'),
             )
           ],
         ),
