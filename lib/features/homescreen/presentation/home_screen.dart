@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:einfarht/api_key.dart';
+//import 'package:einfarht/api_key.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
@@ -167,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
         destination: PointLatLng(_pApplePark.latitude, _pApplePark.longitude),
         mode: TravelMode.driving,
       ),
-      googleApiKey: GOOGLE_MAP_API_KEY,
+      //googleApiKey: GOOGLE_MAP_API_KEY,
     );
 
     if (result.points.isNotEmpty) {
